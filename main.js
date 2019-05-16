@@ -42,8 +42,7 @@ let elastic = Constraint.create({
 function createTower(x, y) {
     if(y == 395) return Bodies.circle(x, y, 25, {
             density: 0.002,
-            staticFriction: .2,
-            friction: .3,
+            friction: .6,
             render: {
                 fillStyle: 'green',
                 strokeStyle: 'black',
@@ -52,8 +51,7 @@ function createTower(x, y) {
         });
     else return Bodies.rectangle(x, y, 50, 50, {
         density: 0.002,
-        staticFriction: .6,
-        friction: .3,
+        friction: .6,
         render: {
             fillStyle: 'gray',
             strokeStyle: 'darkgray',
